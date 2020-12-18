@@ -414,3 +414,111 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 	    padding-left: 21px;
     font-size: 18px;
 }
+
+
+.progress-bar {
+  width: 80%;
+}
+.bar ul {
+  /* remove default ul styling */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.bar li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.bar li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  /* Every span needs a border so things align */
+  border: 3px solid #474748;
+  /*background-color: #474748;*/
+  color: white;
+}
+.bar li:after {
+  background-color: #474748;
+  content: '';
+  height: 3px;
+  flex-grow: 1;
+}
+.bar li:last-child {
+  /*  This prevents the last li from adding space to the right of the span  */
+  width: auto;
+}
+.bar li:last-child:after {
+  display: none;
+}
+.bar li.completed:after {
+  background-color: #f8a26e;
+}
+.completed span{
+  border-color: #f8a26e;
+  /* background-color: #fff;
+  background-color: #f8a26e;*/
+}
+.current {
+  border-color: #f8a26e;
+ /* background-color: #fff;*/
+  color: #f8a26e;
+}
+
+.bar{
+  background-color: black;
+      height: 46px;
+      display: flex;
+      color: white;
+          font-family: unset;
+          padding-left: 20px;
+
+}
+.bar p{
+     padding: 11px;
+}
+.progress-bar {
+background-color: transparent;
+}
+
+.filterform{
+    background-color: #fceadf;
+    margin: 25px 190px;
+    /* height: 140px; */
+    padding: 21px 76px;
+
+}
+
+.mybutn{
+  background: transparent;
+    color: #444;
+    border: 2px solid;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
+}    
+
+.filter-form input{
+     background: transparent;
+    color: #444;
+    border: 2px solid;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 100%;
+}
+.filter-form input['checkbox']{
+}
+.mybtn{
+  background-color: #f8a26e;
+  color: white;
+      width: 500px;
+    height: 50px;
+}
