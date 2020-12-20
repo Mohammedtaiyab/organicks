@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Organicks</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<style>
+.checked {
+  color: orange;
+}
+.card-body{
+padding: 39px;
+text-align: center;
+}
+.person {
+  text-align: center;
+/*  background: #fff;
+  box-shadow: 0 0 9px 0 #0000001a;*/
+}
+.person:hover .personimg:before {
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.person p {
+  margin: 0;
+}
+.personimg {
+  position: relative;
+  width: 100%;
+}
+.personimg img {
+  width: 100%;
+}
+.personimg:before {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #005e9694, rgb(181 181 181 / 0%));
+}
+
+.persondetail {
+  position: relative;
+  margin-top: 10px;
+}
+/*.persondetail:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  top: -24px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 5;
+  transform: skewY(-3deg);
+}*/
+.persondetail p.personunvan {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+}
+.persondetail p.persontitle {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0;
+}
+.personcontact {
+ 
+  padding-top: 7px;
+  color: #676767;
+  font-size: 13px;
+}
+.personcontact p.personemail {
+}
+.personcontact p.persontelefon {
+  padding-top: 7px;
+}
+.personcontact p.personCV {
+  margin-top: 10px;
+}
+.personcontact p.personCV a {
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 0;
+  border-top: 2px solid #eaeaea;
+  font-size: 13px;
+  font-weight: 600;
+  color: #989898;
+}
+.person:hover .personCV a {
+  background: #be3f48;
+  color: #fff;
+  border-top: 2px solid #902e35;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 991.98px) {
+  .mobilmt {
+    margin-top: 50px;
+  }
+  .persondetail:before {
+    height: 34px;
+    top: -30px;
+  }
+}
+.product-section{
+  padding: 10px 60px;
+}
+.select{
+      font-size: 17px;
+    width: auto;
+    border: 0px;
+    background: transparent;
+    text-decoration: underline;
+}
+hr {
+       margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px solid;
+    border-top: 2px solid #f5c4ac;
+    width: 100%;
+}
+.shopbtn{
+  display: grid;
+}
+.shopbtn button{
+      background: transparent;
+    color: #f8a26e;
+    padding: 1em 4em;
+    display: inline-block;
+    margin-top: 1rem;
+    border: 2px solid;
+    border-color: #f8a26e;
+}
+.dark{
+    color: #000000;
+  border-color: #000000;
+}
+</style>
+</head>
+<body>
+<nav class="navbar" role="navigation">
+ <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div type="div" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      
+    </div>
+    <a class="navbar-brand" href="#">Brand</a>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+     
+      <ul class="nav navbar-nav navbar-left">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="buildsolution.html">Build Solution</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">Log in</a></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+</div><!-- /.navbar-container -->
+</nav>
+
+
+ <section class="our-blog product-section" >
+        <div class="container">
+            <div class="text-center">
+                <h2><span>Here Is Your Customised <br> Solution </span></h2>
+                
+                </div>
+                <div class="my-5">
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 mobilmt">
+                            <div class="person">
+                                <div class="personimg">
+                                    <img src="https://images.unsplash.com/photo-1442458370899-ae20e367c5d8?auto=format&fit=crop&w=1267&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+                                </div>
+                                <div class="persondetail">
+                                  <button class="probutn">
+                                    SHAMPOO
+                                  </button>
+                                   <h3>Lorem ipsum dolor sitamet, consetetur</h3>
+                                </div>
+                                <div class="personcontact">
+                                    <p class="personemail"><i class="fas fa-envelope-open-text"></i>Rs 300/- for 250ml</p>
+                                   <select class="select">
+        <option value="value1">Usage Instructions</option>
+        <option value="value1">Lorem</option>
+       
+      </select>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mobilmt">
+                            <div class="person">
+                                <div class="personimg">
+                                    <img src="https://images.unsplash.com/photo-1442458370899-ae20e367c5d8?auto=format&fit=crop&w=1267&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+                                </div>
+                                <div class="persondetail">
+                                      <button class="probutn">
+                                    CREAM
+                                  </button>
+                                     <h3>Lorem ipsum dolor sitamet, consetetur</h3>
+                                </div>
+                                <div class="personcontact">
+                                    <p class="personemail"><i class="fas fa-envelope-open-text"></i>Rs 300/- for 250ml</p>
+                                  <select class="select">
+        <option value="value1">Usage Instructions</option>
+        <option value="value1">Lorem</option>
+       
+      </select>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 mobilmt">
+                            <div class="person">
+                                <div class="personimg">
+                                    <img src="https://images.unsplash.com/photo-1442458370899-ae20e367c5d8?auto=format&fit=crop&w=1267&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+                                </div>
+                                <div class="persondetail">
+                                <button class="probutn">
+                                    OIL
+                                  </button>
+                                     <h3>Lorem ipsum dolor sitamet, consetetur</h3>
+                                </div>
+                                <div class="personcontact">
+                                    <p class="personemail"><i class="fas fa-envelope-open-text"></i>Rs 300/- for 250ml</p>
+                                   
+                                  <select class="select">
+        <option value="value1">Usage Instructions</option>
+        <option value="value1">Lorem</option>
+       
+      </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h3>Grand Total <span>Rs 900/-</span></h3>
+                          <hr>
+                          <div class="shopbtn"style="display: grid;">
+                              <button >
+                            PLACE ORDER
+                          </button>
+                            <div class="text-center" style="margin-top: 33px">
+               <p>Want to explore more product options?</p>
+                
+                </div>
+                         
+                          <button class="" style="  color: #000000;
+                            border-color: #000000;">CUSTOMIZE YOUR OWN BOX</button>
+                          </div>
+                        
+                      </div>
+                    </div>
+              </div>
+            </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+<div class="container">
+  <h5 class="headin5_amrc col_white_amrc pt2">EXPLORE</h5>
+<ul class="foote_bottom_ul_amrc">      
+<li><a href="">Home</a></li>
+<li><a href="">Hair</a></li>
+<li><a href="">Care</a></li>
+<li><a href="">Skin Care</a></li>
+<li><a href="">Personalize</a></li>
+<li><a href="">Box</a></li>
+<li><a href="">Blogs</a></li>
+<li><a href="">Offers</a></li>
+<li><a href="">FAQ</a></li>
+<li><a href="">Log in</a></li>
+<li><a href="">Sign up</a></li>
+<li><a href="">Cart</a></li>
+</ul>
+</div>
+
+
+<div class="container" style="margin-top: 34px;">
+  <div class="row">
+    <div class="col-md-2">
+    <img src="http://placehold.it/350x150/feb371/" style="width: 100%;">
+    </div>
+    <div class="col">
+     <p>All rights reserved</p>
+     <p><span>Terms of Use | Privacy Policy | Cookies</span></p>
+    </div>
+    <div class="col col-lg-2">
+     <ul class="social_footer_ul">
+<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+</ul>
+    </div>
+  </div>
+</div>
+</footer>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
