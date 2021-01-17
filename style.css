@@ -527,3 +527,294 @@ background-color: transparent;
   color: white;
     
 }
+.checked {
+  color: orange;
+}
+.card-body{
+padding: 39px;
+text-align: center;
+}
+.person {
+  text-align: center;
+/*  background: #fff;
+  box-shadow: 0 0 9px 0 #0000001a;*/
+}
+.person:hover .personimg:before {
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+.person p {
+  margin: 0;
+}
+.personimg {
+  position: relative;
+  width: 100%;
+}
+.personimg img {
+  width: 100%;
+}
+.personimg:before {
+  opacity: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #005e9694, rgb(181 181 181 / 0%));
+}
+
+.persondetail {
+  position: relative;
+  margin-top: 10px;
+}
+/*.persondetail:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  top: -24px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 5;
+  transform: skewY(-3deg);
+}*/
+.persondetail p.personunvan {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+}
+.persondetail p.persontitle {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0;
+}
+.personcontact {
+ 
+  padding-top: 7px;
+  color: #676767;
+  font-size: 13px;
+}
+.personcontact p.personemail {
+}
+.personcontact p.persontelefon {
+  padding-top: 7px;
+}
+.personcontact p.personCV {
+  margin-top: 10px;
+}
+.personcontact p.personCV a {
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 0;
+  border-top: 2px solid #eaeaea;
+  font-size: 13px;
+  font-weight: 600;
+  color: #989898;
+}
+.person:hover .personCV a {
+  background: #be3f48;
+  color: #fff;
+  border-top: 2px solid #902e35;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 991.98px) {
+  .mobilmt {
+    margin-top: 50px;
+  }
+  .persondetail:before {
+    height: 34px;
+    top: -30px;
+  }
+}
+.product-section{
+  padding: 10px 60px;
+}
+.select{
+      font-size: 17px;
+    width: auto;
+    border: 0px;
+    background: transparent;
+    text-decoration: underline;
+}
+hr {
+       margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px solid;
+    border-top: 2px solid #f5c4ac;
+    width: 100%;
+}
+.shopbtn{
+  display: grid;
+}
+.shopbtn button{
+      background: transparent;
+    color: #f8a26e;
+    padding: 1em 4em;
+    display: inline-block;
+    margin-top: 1rem;
+    border: 2px solid;
+    border-color: #f8a26e;
+}
+.dark{
+    color: #000000;
+  border-color: #000000;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+.template-btn {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 12px 20px;
+  display: inline-block;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.template-btn:hover {
+  color: white;
+  background: #f28500;
+}
+.portfolio-section {
+  padding-bottom: 30px;
+  transition: 1.3s;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.portfolio-tab ul {
+  text-align: center;
+  margin-top: 50px;
+}
+.portfolio-tab ul li {
+  color: #000;
+  background: transparent;
+  display: inline;
+  font-weight: 900;
+  font-family: math;
+  font-size: 27px;
+  /* text-transform: uppercase; */
+  padding: 12px 16px;
+  /* border: 2px solid #e30b5d; */
+  margin: 0 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 575.98px) {
+  .portfolio-tab ul li {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+  }
+}
+.portfolio-tab ul li:hover {
+  color: #feb371;
+}
+.portfolio-tab ul .active {
+  color: #feb371;
+}
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.portfolio-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+}
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 768.1px) and (max-width: 991px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }		
+  }
+.portfolio-grid .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	display:none;
+	overflow:hidden;
+}
+.portfolio-wrapper {
+  overflow:hidden;
+  position: relative !important;
+  cursor:pointer;
+}
+.portfolio-bg {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+  transform: scale(1)
+}
+.portfolio:hover .portfolio-bg{
+  transform: scale(1.2)
+}
+.first .portfolio-bg{
+  /* background-image: url('https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?cs=srgb&dl=accounts-applications-apps-267350.jpg&fm=jpg'); */
+  
+}
+.second .portfolio-bg{
+  /* background-image: url('https://images.pexels.com/photos/1053687/pexels-photo-1053687.jpeg?cs=srgb&dl=art-art-materials-artwork-1053687.jpg&fm=jpg'); */
+}
+.third .portfolio-bg{
+  /* background-image: url('https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?cs=srgb&dl=brainstorming-campaign-collaborate-6224.jpg&fm=jpg'); */
+  
+}
+.portfolio .label {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  bottom: 0;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden
+}
+
+.portfolio .label-bg {
+  background: #232323;
+  opacity: 0.7;
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  transition: 1px;
+}
+.portfolio .label-text {
+  color:#fff;
+  position: relative;
+  z-index:500;
+  padding:50px 20px;
+}
+.portfolio:hover .label {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio .text-category {
+  display:block;
+}
+.portfolio .template-btn {
+  background: #e30b5d;
+  border: 1px solid #e30b5d;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: 500
+}
