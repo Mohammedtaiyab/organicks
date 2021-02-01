@@ -23,7 +23,7 @@ $('.owl-carousel').owlCarousel({
 // Initialize slider:
 $(document).ready(function() {
     $('.noUi-handle').on('click', function() {
-      $(this).width(50);
+      $(this).width(6);
     });
     var rangeSlider = document.getElementById('slider-range');
     var moneyFormat = wNumb({
@@ -2026,7 +2026,7 @@ $(document).ready(function() {
 // Initialize slider:
 $(document).ready(function() {
   $('.noUi-handle').on('click', function() {
-    $(this).width(50);
+    $(this).width(6);
   });
   var rangeSlider = document.getElementById('slider-range');
   var moneyFormat = wNumb({
